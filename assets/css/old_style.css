@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+  background: black;
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+a {
+  pointer-events: all;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  margin: 20px 10px;
+
+  height: 36px;
+  border-radius: 20px;
+  background-color: #f7d54d;
+
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+h2 {
+  font-size: 18px;
+  position: relative;
+}
+
+h2 .numero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(-120%, -20%, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f7d54d;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2 .numero.right {
+  top: 0;
+  left: inherit;
+  right: 0;
+  transform: translate3d(120%, -20%, 0);
+}
+
+h3 {
+  margin-bottom: 5px;
+  max-width: 280px;
+
+  font-family: 'Roboto', sans-serif;
+  color: #94918c;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h3.text-center {
+  max-width: inherit;
+}
+
+
+
+/* wrapper */
+
+.wrapper {
+  overflow: hidden;
+
+  position: relative;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+
+
+/* bg-color */
+
+.bg-color {
+  background: #f6f6f2;
+}
+
+
+/* home */
+
+.home--top {
+  padding-top: 40px;
+}
+
+.logotipo {
+  position: relative;
+  z-index: 10;
+  width: 80px;
+  height: 40px;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/logotipo.svg');
+}
+
+.home--img {
+  margin-top: -100px;
+
+  max-width: 60%;
+  width: 600px;
+  height: 600px;
+  background-size: 90% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/home.png');
+}
+
+/* parceiro images */
+
+.parceiro--home--img {
+  position: relative;
+  z-index: 9;
+  margin-top: -100px;
+  margin-left: -150px;
+
+  width: 150%;
+  height: 600px;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/parceiro-home.png');
+}
+
+.parceiro--motivo-1,
+.parceiro--motivo-2,
+.parceiro--motivo-3,
+.parceiro--motivo-4,
+.parceiro--motivo-5 {
+  margin: 0 0 40px 0;
+  width: 100%;
+  height: 500px;
+  background-size: auto 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/parceiro-motivo-1.png');
+}
+.parceiro--motivo-2 {
+  background-image: url('/assets/images/parceiro-motivo-2.png');
+}
+.parceiro--motivo-3 {
+  background-image: url('/assets/images/parceiro-motivo-3.png');
+}
+.parceiro--motivo-4 {
+  background-image: url('/assets/images/parceiro-motivo-4.png');
+}
+.parceiro--motivo-5 {
+  background-image: url('/assets/images/parceiro-motivo-5.png');
+}
+
+.home--bottom {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+}
+
+.app-store,
+.google-play {
+  margin-right: 10px;
+  width: 92px;
+  height: 32px;
+  background-size: auto 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/app-store.png');
+}
+
+.google-play {
+  background-image: url('/assets/images/google-play.png');
+}
+
+
+
+/* como funciona */
+
+.como-funciona-1 {
+  margin-left: -220px;
+  margin-right: 20px;
+
+  width: 440px;
+  height: 320px;
+  background-size: auto 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/como-funciona-1.png');
+}
+
+.como-funciona-2 {
+  margin-right: -360px;
+  margin-left: 20px;
+
+  width: 580px;
+  height: 500px;
+  background-size: auto 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/como-funciona-2.png');
+}
+
+.como-funciona-3 {
+  margin-left: -100px;
+  margin-right: 20px;
+
+  width: 480px;
+  height: 340px;
+  background-size: auto 340px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/como-funciona-3.png');
+}
+
+.como-funciona-4 {
+  margin-right: -150px;
+  margin-left: 20px;
+
+  width: 440px;
+  height: 340px;
+  background-size: auto 340px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/como-funciona-4.png');
+}
+
+
+
+/* footer */
+
+.footer {
+  padding: 40px 0;
+  color: white;
+  background-color: black;
+}
+
+.footer-logotipo {
+  width: 80px;
+  height: 40px;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('/assets/images/logotipo-footer.png');
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.px-20 {
+  padding: 0 20px;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+
+@media (max-width: 940px) {
+
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .mobile-column {
+    flex-direction: column;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .home--bottom {
+    position: relative;
+    bottom: 0;
+    padding: 20px 0;
+  }
+
+  .parceiro--motivo-1,
+  .parceiro--motivo-2,
+  .parceiro--motivo-3,
+  .parceiro--motivo-4,
+  .parceiro--motivo-5 {
+    height: 250px;
+    background-size: auto 80%;
+    background-size: 80% auto;
+  }
+
+}
